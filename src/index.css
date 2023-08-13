@@ -1,0 +1,189 @@
+:root {
+  --primary-btn: rgb(129, 4, 247);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.back {
+  margin-inline: auto;
+  display: block;
+  margin-top: 2rem;
+  text-decoration: underline;
+  text-transform: capitalize;
+  color: var(--primary-btn);
+  font-size: 1rem;
+}
+
+input {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  min-height: 100vh;
+
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: auto;
+  min-height: 97vh;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.account>button {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: .5rem;
+}
+
+.create-account {
+  background-color: var(--primary-btn);
+  color: #fff;
+}
+
+.login {
+  background-color: rgb(204, 174, 233);
+}
+
+.login-page {
+  padding: 1rem;
+}
+
+.login-page>h2 {
+  font-size: 1.8rem;
+  letter-spacing: .5px;
+}
+
+.login-page>p {
+  font-size: 1.2rem;
+  color: #999;
+  margin-bottom: 1.3rem;
+
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.login-inputs .login-inputs>div {
+  width: 100%;
+}
+
+.input-cont {
+  position: relative;
+}
+
+.input-cont>input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: .4rem;
+  font-size: 1rem;
+}
+
+
+.input-cont>label {
+  position: absolute;
+  top: -.8rem;
+  left: 1rem;
+  color: var(--primary-btn);
+  padding: 0 .4rem;
+  background-color: #fff;
+}
+
+.input-cont>input::placeholder {
+  font-size: 1rem;
+}
+
+.input-cont>input:is(:hover, :focus) {
+  outline: 1px solid var(--primary-btn);
+}
+
+.login-btn {
+  background-color: #999;
+  width: 100%;
+  padding-block: 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: .5rem;
+  transition: background-color 200ms ease-in-out;
+  color: #fff;
+}
+
+.login-btn:is(:hover, :focus) {
+  background-color: var(--primary-btn);
+}
+
+.signup-page {
+  padding: 1rem;
+}
+
+.signup-page>h2 {
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.signup-page .input-cont>input {
+  border: 1px solid #dbd8d8;
+}
+
+.AS-page {
+  border-bottom: 1px dotted #999;
+}
+
+.AS-page>h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+  margin: 0;
+  letter-spacing: 1px;
+  border-bottom: .5px solid #d8d6d6;
+}
+
+.user-details {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  padding-block: 1rem;
+}
+
+.user-details>img {
+  width: 5rem;
+  clip-path: circle();
+  margin-left: 1rem;
+}
+
+.user-details>div>p:first-child {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+.user-bio {
+  padding-inline: 1rem;
+}
